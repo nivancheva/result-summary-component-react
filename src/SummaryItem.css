@@ -1,0 +1,9 @@
+.flex-group {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.summary-item {
+    justify-content: space-between;
+}
