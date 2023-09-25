@@ -11,30 +11,31 @@
 }
 
 .summary-score {
-    color: grey;
+    color: hsla(224, 30%, 27%, .5);
+    font-weight: 700;
 }
 
 .summary-score span {
     font-weight: 800;
-    color:black
+    color: hsl(224, 30%, 27%);
 }
 
 .item-red {
-    background-color: rgb(241, 202, 202);
-    color: red;
+    background-color: hsla(0, 100%, 67%, .1);;
+    color: hsl(0, 100%, 67%);
 }
 
 .item-yellow {
-    background-color: rgb(235, 217, 183);
-    color: yellow;
+    background-color: hsla(39, 100%, 56%, .1);
+    color: hsl(39, 100%, 56%);
 }
 
 .item-green {
-    background-color: rgb(191, 236, 191);
-    color: green;
+    background-color: hsla(166, 100%, 37%, .1);
+    color: hsl(166, 100%, 37%);
 }
 
 .item-blue {
-    background-color: rgb(203, 203, 241);
-    color: blue;
+    background-color: hsla(234, 85%, 45%, .1);
+    color: hsl(234, 85%, 45%);
 }

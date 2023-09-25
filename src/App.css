@@ -24,12 +24,12 @@ body {
 }
 
 .results {
-    background-color: blue;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 0 0 1.25em 1.25em;
     overflow: hidden;
     text-align: center;
 
-    color: white;
+    color: hsla(0, 0%, 100%, .7);
 
     display: grid;
     gap: 2em;
@@ -43,12 +43,13 @@ body {
 }
 
 .result-score {
-    background-color: darkblue;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
     width: 12rem;
     margin-inline: auto;
     aspect-ratio: 1 / 1;
     line-height: 1.1;
+    color: hsl(0, 0%, 100%);
 
     display: grid;
     place-content: center;
@@ -83,6 +84,7 @@ body {
 .summary h2 {
     font-weight: 800;
     font-size: 1.5rem;
+    color: hsl(224, 30%, 27%);
 
     margin: 0;
 }
@@ -92,14 +94,14 @@ body {
     border: 0;
     border-radius: 100vw;
     line-height: 1.6;
-    background-color: blue;
-    color: white;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
 
     padding: 1rem 2rem;
 }
 
 .btn:hover {
-    background-color: red;
+    background: hsl(224, 30%, 27%)
 }
 
 @media (min-width:800px) {
