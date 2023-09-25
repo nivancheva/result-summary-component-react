@@ -28,7 +28,7 @@ function App() {
               )
             })}
           </div>
-          <button>Continue</button>
+          <button className='btn'>Continue</button>
         </div>
       </div>
     </main>
