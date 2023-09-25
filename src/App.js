@@ -14,19 +14,20 @@ function App() {
           <h1>Your result</h1>
           <p className='result-score'><span>76</span> of 100</p>
           <div>
-            <p>Great</p>
+            <p className='result-rank'>Great</p>
             <p>You scored higher than 65% of the people who have taken these tests.</p>
           </div>
         </div>
 
         <div className='summary'>
           <h2>Summary</h2>
-          {summaryItems.map((summaryItem, idx) => {
-             return (
-              <SummaryItem key={idx} {...summaryItem}/>
-             )
-          })}
-          
+          <div className='items'>
+            {summaryItems.map((summaryItem, idx) => {
+              return (
+                <SummaryItem key={idx} {...summaryItem}/>
+              )
+            })}
+          </div>
           <button>Continue</button>
         </div>
       </div>
