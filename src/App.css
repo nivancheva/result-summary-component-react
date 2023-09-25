@@ -45,7 +45,7 @@ body {
 .result-score {
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%;
-    width: 12rem;
+    width: 13rem;
     margin-inline: auto;
     aspect-ratio: 1 / 1;
     line-height: 1.1;
@@ -98,7 +98,7 @@ body {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(0, 0%, 100%);
 
-    padding: 1rem 2rem;
+    padding: .75rem 2rem;
 }
 
 .btn:hover {
@@ -114,7 +114,7 @@ body {
     .result-summary {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        max-width: 730px;
+        max-width: 750px;
 
         margin-inline: 2em;
         border-radius: 2rem;
@@ -127,6 +127,6 @@ body {
     }
 
     .summary {
-        padding: 2em 3rem;
+        padding: 2.5em 3rem;
     }
 }
