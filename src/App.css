@@ -1,4 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font: inherit;
+  }
+  
+  img,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
 body {
     font-family: 'Hanken Grotesk';
     font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.result-summary {
+    text-align: center;
+}
+
+
+@media (min-width:800px) {
+    .result-summary {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1000px;
+
+        place-items: center;
+        min-height: 100vh;
+    }
 }
