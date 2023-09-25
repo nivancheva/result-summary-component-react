@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import SummaryItem from './SummaryItem';
 import { useState } from 'react';
-import data from './data.json';
+import dataJson from './data.json';
 
 function App() {
-  const [summaryItems] = useState(data);
+  const [summaryItems] = useState(dataJson);
   
   return (
     <main>
@@ -21,9 +21,9 @@ function App() {
 
         <div className='summary'>
           <h2>Summary</h2>
-          {summaryItems.map((data, idx) => {
+          {summaryItems.map((summaryItem, idx) => {
              return (
-              <SummaryItem key={idx} data={data}/>
+              <SummaryItem key={idx} {...summaryItem}/>
              )
           })}
           

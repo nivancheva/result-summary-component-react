@@ -3,24 +3,24 @@
       "category": "Reaction",
       "score": 80,
       "icon": "./images/icon-reaction.svg",
-      "color": "#FF5757"
+      "color": "red"
     },
     {
       "category": "Memory",
       "score": 92,
       "icon": "./images/icon-memory.svg",
-      "color": "#FFB01F"
+      "color": "yellow"
     },
     {
       "category": "Verbal",
       "score": 61,
       "icon": "./images/icon-verbal.svg",
-      "color": "#00BD91"
+      "color": "green"
     },
     {
       "category": "Visual",
       "score": 72,
       "icon": "./images/icon-visual.svg",
-      "color": "#1125D4"
+      "color": "blue"
     }
   ]

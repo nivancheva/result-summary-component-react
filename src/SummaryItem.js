@@ -1,14 +1,11 @@
-import data from './data.json';
-
-export default function SummaryItem({data}) {
-
+export default function SummaryItem({icon, category, score, color}) {
     return (
-        <div>   
+        <div className={"summary-item item-" + color}>   
             <div className="flex-group">
-                <img src={data.icon}/>   
-                <h3>{data.category}</h3>
+                <img src={icon} alt={category} />
+                <h3>{category}</h3>
             </div>
-            <p className="summary-score"><span>{data.score}</span> / 100</p>
+            <p className="summary-score"><span>{score}</span> / 100</p>
         </div>
     )
 }
