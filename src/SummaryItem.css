@@ -6,4 +6,35 @@
 
 .summary-item {
     justify-content: space-between;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.summary-score {
+    color: grey;
+}
+
+.summary-score span {
+    font-weight: 800;
+    color:black
+}
+
+.item-red {
+    background-color: rgb(241, 202, 202);
+    color: red;
+}
+
+.item-yellow {
+    background-color: rgb(235, 217, 183);
+    color: yellow;
+}
+
+.item-green {
+    background-color: rgb(191, 236, 191);
+    color: green;
+}
+
+.item-blue {
+    background-color: rgb(203, 203, 241);
+    color: blue;
 }

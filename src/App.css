@@ -19,20 +19,78 @@ body {
     font-family: 'Hanken Grotesk';
     font-weight: 500;
     font-size: 1.125rem;
+
+    min-height: 100vh;
 }
 
-.result-summary {
+.results {
+    background-color: blue;
+    border-radius: 0 0 1.25em 1.25em;
+    overflow: hidden;
     text-align: center;
+
+    color: white;
+
+    display: grid;
+    gap: 1.5em;
+    padding: 2.5em;
 }
 
+.results h1 {
+    font-size: 1.5rem;
+}
+
+.result-score {
+    background-color: darkblue;
+    border-radius: 50%;
+    width: 12rem;
+    margin-inline: auto;
+    aspect-ratio: 1 / 1;
+
+    display: grid;
+    place-content: center;
+}
+
+.result-score span {
+    display: block;
+    font-weight: 900;
+    font-size: 5em;
+}
+
+.summary {
+    padding: 2.5em;
+    display: grid;
+    gap: .75em;
+}
+
+.summary h2 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 100vh;
+    background-color: blue;
+    color: white;
+}
 
 @media (min-width:800px) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+
     .result-summary {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         max-width: 1000px;
 
-        place-items: center;
-        min-height: 100vh;
+        margin-inline: 2em;
+    }
+
+    .results {
+        border-radius: 1.5em;
     }
 }
