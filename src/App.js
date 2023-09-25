@@ -1,10 +1,36 @@
+import React from 'react';
 import './App.css';
+import SummaryItem from './SummaryItem';
+import { useState } from 'react';
+import data from './data.json';
 
 function App() {
+  const [summaryItems] = useState(data);
+  
   return (
-    <div>
-      <p>Hello Bobyyy</p>
-    </div>
+    <main>
+      <div className='result-summary'>
+        <div className='results'>
+          <h1>Your result</h1>
+          <p><span>76</span> of 100</p>
+          <div>
+            <p>Great</p>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+        </div>
+
+        <div className='summary'>
+          <h2>Summary</h2>
+          {summaryItems.map((data, idx) => {
+             return (
+              <SummaryItem key={idx} data={data}/>
+             )
+          })}
+          
+          <button>Continue</button>
+        </div>
+      </div>
+    </main>
   );
 }
 
