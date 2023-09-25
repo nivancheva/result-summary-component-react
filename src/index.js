@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import './fonts/HankenGrotesk-VariableFont_wght.ttf';
+import './fonts/static/HankenGrotesk-Medium.ttf';
+import './fonts/static/HankenGrotesk-Bold.ttf';
+import './fonts/static/HankenGrotesk-ExtraBold.ttf';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
